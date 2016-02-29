@@ -53,3 +53,17 @@ all_data <- cbind(x_data, y_data, subject_data)
 average <- ddply(all_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
 write.table(average, "average.txt", row.name=FALSE)
+
+# Functon to change names
+
+rename = function(a)
+{
+  name = ""
+  if (a == 1) {name = "WALKING"}
+  if (a == 2) {name = "WALKING_UPSTAIRS"}
+  if (a == 3) {name = "WALKING_DOWNSTAIRS"}
+  if (a == 4) {name = "SITTING"}
+  if (a == 5) {name = "STANDING"}
+  if (a == 6) {name = "LAYING"}
+  name
+}
