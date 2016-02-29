@@ -1,0 +1,12 @@
+# Codebook
+
+## Description
+
+The data processed was taken from 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+on february 28th, 2016.
+The data shown is merged between test and train data
+
+Only the measurements on the mean and standard deviation for each measurement are shown.
+Uses descriptive activity names to name the activities in the data set
+The data set contains the average of each variable for each activity and each subject.
